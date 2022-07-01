@@ -16,15 +16,12 @@ const Posts = () => {
           <View>
             <View style={styles.postHeader}>
               <View style={styles.postHeaderAuthor}>
-                <Image
-                  style={styles.authorImage}
-                  source={require('../assets/Avatar.png')}
-                />
+                <Image style={styles.authorImage} source={{uri: item.avatar}} />
                 <Text style={styles.authorText}>{item.author}</Text>
               </View>
               <Image source={require('../assets/more.png')} />
             </View>
-            <Image style={styles.postImage} />
+            <Image style={styles.postImage} source={{uri: item.image}} />
           </View>
         )}
       />
@@ -44,7 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 8,
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
+    paddingHorizontal: 10,
   },
   authorText: {fontWeight: '700', fontSize: 12},
   postHeaderAuthor: {flexDirection: 'row', alignItems: 'center'},

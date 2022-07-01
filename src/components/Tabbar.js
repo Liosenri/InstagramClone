@@ -38,7 +38,7 @@ export default Tabbar;
 const styles = StyleSheet.create({
   containerView: {
     flexDirection: 'row',
-    paddingHorizontal: 16,
+    paddingHorizontal: 10,
     justifyContent: 'space-around',
     paddingVertical: 10,
   },

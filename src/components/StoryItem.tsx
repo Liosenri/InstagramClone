@@ -1,16 +1,21 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
+import {Story} from '../types';
 
-const StoryItem = ({name}) => {
+type Props = {
+  story: Story;
+};
+
+const StoryItem = ({story: {avatar, username}}: Props) => {
   return (
     <View style={styles.storyItem}>
       <Image
         style={styles.storyPhoto}
         source={{
-          uri: 'https://randomuser.me/api/portraits/men/65.jpg',
+          uri: avatar,
         }}
       />
-      <Text>{name}</Text>
+      <Text>{username}</Text>
     </View>
   );
 };

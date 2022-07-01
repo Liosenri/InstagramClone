@@ -30,11 +30,11 @@ export default Header;
 
 const styles = StyleSheet.create({
   containerView: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   buttonsContainer: {flexDirection: 'row'},
-  buttonImage: {marginLeft: 16},
+  buttonImage: {marginLeft: 10},
 });
