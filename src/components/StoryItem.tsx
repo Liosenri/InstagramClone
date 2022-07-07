@@ -15,7 +15,7 @@ const StoryItem = ({story: {avatar, username}}: Props) => {
           uri: avatar,
         }}
       />
-      <Text>{username}</Text>
+      <Text numberOfLines={1}>{username}</Text>
     </View>
   );
 };
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: 'blue',
+    backgroundColor: 'lightgray',
     borderColor: 'purple',
     borderWidth: 1,
     marginBottom: 5,
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   storyItem: {
     alignItems: 'center',
     padding: 5,
+    width: 80,
   },
   contentContainerStyle: {padding: 20},
 });
